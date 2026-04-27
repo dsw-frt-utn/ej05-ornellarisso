@@ -8,7 +8,12 @@ namespace Dsw2026Ej5
         static void Main(string[] args)
         {
             Persistencia.InicializarDatos();
-            ConsoleView.DibujarMenu();
+
+            bool continuar = true;
+            while (continuar)
+            {
+                ConsoleView.DibujarMenu();
+            }
         }
     }
 }
