@@ -27,6 +27,10 @@ public class ConsoleView
             else if (opcion == "2")
             {
                 Console.WriteLine("Agregando vehículo...");
+                _vehiculos = Controlador.GetVehiculos();
+                Console.WriteLine("Lista de vehículos actualizada.");
+                Console.WriteLine("Presione una tecla para continuar...");
+                Console.ReadKey();
             }
         }
         while (opcion != "3");
